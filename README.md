@@ -65,3 +65,6 @@ ps: if you whant to be able to interact between your project , just declare it i
 BBSALSERO.
 
 
+#todo
+
+*refacto.
