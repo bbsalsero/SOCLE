@@ -68,3 +68,4 @@ BBSALSERO.
 #todo
 
 *refacto.
+*modifyng uncaught by domain error handler
