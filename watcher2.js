@@ -10,29 +10,18 @@ platform:process.platform,
 memory:process.memoryUsage(),
 uptime:process.uptime()
 }}
-// console.log(info())
-
-//var fs = require('fs')
- //console.log('watch that '+__filename)
+ 
 module.exports=function(mod,callback){
-	//console.log(mod)
+ 
 if(typeof extmod[mod] == 'undefined'){
 
-// if(unload == true){
-
-// 	delete require.cache[require.resolve(mod)]
-
-// }
+ 
 	extmod[mod]=require(mod)
-
-// console.log(extmod)
-
 
 fs.watchFile(mod, function (curr, prev) {
 	console.log('the current mtime is: ' + curr.mtime);
 	console.log('the previous mtime was: ' + prev.mtime);
-	//var depo=''//require('./lib/depo.js')
-	
+	 
 	console.log(mod +' reloading...')
 
 	
@@ -86,3 +75,5 @@ var watcher=require(__filename);
 
 watcher=watcher(__filename)
 //var socle=watcher('./socle.js')
+
+console.log(__filename)

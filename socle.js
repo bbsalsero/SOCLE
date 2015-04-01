@@ -1,12 +1,10 @@
-var fs = require('fs')
-
-
+ 
 var loadall=require('./loadall.js');
 
 var local={}
-//local[__filename]=watcher(__filename,true);
+
 local[__filename]=watcher(__filename);
-//var watcher=require('./watcher2.js')
+
 
 loadall=function(){
 	return watcher('./loadall.js')
@@ -25,5 +23,5 @@ memory:process.memoryUsage(),
 uptime:process.uptime()
 }}
 info()
-
+console.log('hello')
 
